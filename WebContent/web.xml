@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <servlet>
+    <description></description>
+    <display-name>DoLogin</display-name>
+    <servlet-name>DoLogin</servlet-name>
+    <servlet-class>controller.DoLogin</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>DoLogin</servlet-name>
+    <url-pattern>/DoLogin</url-pattern>
+  </servlet-mapping>
+
+      <servlet>
+    <servlet-name>ShowAllMessage</servlet-name>
+    <servlet-class>controller.ShowAllMessage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowAllMessage</servlet-name>
+    <url-pattern>/ShowAllMessage</url-pattern>
+  </servlet-mapping>
+
+        <servlet>
+    <servlet-name>InputMessage</servlet-name>
+    <servlet-class>controller.InputMessage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InputMessage</servlet-name>
+    <url-pattern>/InputMessage</url-pattern>
+  </servlet-mapping>
+
+          <servlet>
+    <servlet-name>DeleteMessage</servlet-name>
+    <servlet-class>controller.DeleteMessage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteMessage</servlet-name>
+    <url-pattern>/DeleteMessage</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <servlet-name>NewAccount</servlet-name>
+    <servlet-class>controller.NewAccount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewAccount</servlet-name>
+    <url-pattern>/NewAccount</url-pattern>
+  </servlet-mapping>
+  </web-app>
