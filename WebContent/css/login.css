@@ -1,0 +1,161 @@
+	*{
+	margin:0;
+	padding:0;
+	}
+	body{
+		background:#343A40;
+		font-family:"Meiryo";
+
+	}
+	.login_screen{
+	    display:flex;
+	}
+	.input_username_box{
+		display:flex;
+
+	}
+	.login_title{
+		font-family: "Meiryo",sans-serif;
+		font-size:1000%;
+		text-align:center;
+		padding-top:13%;
+		padding-left:15%;
+		color:white;
+		width:45%;
+	}
+	.input_password_box{
+		display:flex;
+	}
+	.login_container{
+		width:20%;
+		background:white;
+        margin-top:16%;
+        margin-left:8%;
+        height:350px;
+	}
+	.login_word{
+		text-align:center;
+        font-size:180%;
+		background-color:#9ee0d6;
+		vertical-align: middle;
+		font-family: "Meiryo",sans-serif;
+		line-height:55px;
+		color:white;
+		height:50px;
+	}
+	.input_username_box{
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:10%;
+	}
+	.input_password_box{
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:8%;
+	}
+	.login_userid_text {
+
+		font-family: "Meiryo",sans-serif;
+	}
+	.login_password_text{
+
+		font-family: "Meiryo",sans-serif;
+	}
+	.humanlogo{
+		background-color:#e0e0e0;
+		width:15%;
+        height:;
+	}
+	.locklogo{
+		background-color:#e0e0e0;
+		width:15%;
+	}
+
+	.login_button{
+		text-align:center;
+		width:80%;
+		margin-left:10%;
+		margin-top:7%;
+	}
+	.account_button{
+		text-align:center;
+        width:80%;
+        margin-left:10%;
+        margin-top:5%;
+	}
+	.account_button_box{
+		backgroung-color:white;
+	}
+
+@media screen and (max-width:1024px){
+	*{
+	margin:0;
+	padding:0;
+	}
+	body{
+	background:#343A40;
+	font-family:"Meiryo";
+
+}
+.login_screen{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:0;
+	height:100vh;
+}
+.input_username_box{
+
+
+}
+.login_title{
+	font-size:400%;
+	margin:0;
+	order:1;
+	color:white;
+	padding:0;
+}
+.input_password_box{
+
+}
+.login_container{
+	margin:0;
+	flex-direction:culumn;
+	order:2;
+	width:auto;
+	height:60%;
+}
+.login_word{
+
+}
+.input_username_box{
+
+}
+.input_password_box{
+
+}
+.login_userid_text {
+
+}
+.login_password_text{
+
+}
+.humanlogo{
+	width:12%;
+}
+.locklogo{
+    width:12%;
+}
+.login_button{
+    width:80%;
+}
+.account_button{
+    width:80%;
+}
+.account_button_box{
+    width:100%;
+}
+}
+
