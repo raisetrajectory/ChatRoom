@@ -9,6 +9,8 @@ import java.util.Base64;
 
 import javax.imageio.ImageIO;
 
+//投稿された画像をbyte配列に変換するクラス
+
 public class InputStreamConverter {
     public static String toBase64(InputStream inputStream) throws IOException {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
