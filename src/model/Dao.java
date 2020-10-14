@@ -15,19 +15,15 @@ public class Dao {
 	//-------------------------------------------
 
 	//JDBCドライバの相対パス
-	//※バージョンによって変わる可能性があります（MySQL5系の場合は「com.mysql.jdbc.Driver」）
 	String DRIVER_NAME = "com.mysql.cj.jdbc.Driver";
 
 	//接続先のデータベース
-	//※データベース名が「test_db」でない場合は該当の箇所を変更してください
 	String JDBC_URL    = "jdbc:mysql://localhost/test_db?characterEncoding=UTF-8&serverTimezone=JST&useSSL=false";
 
 	//接続するユーザー名
-	//※ユーザー名が「test_user」でない場合は該当の箇所を変更してください
 	String USER_ID     = "test_user";
 
 	//接続するユーザーのパスワード
-	//※パスワードが「test_pass」でない場合は該当の箇所を変更してください
 	String USER_PASS   = "test_pass";
 	public UserInfoDto doCheckUserInfo(String inputUserId, String inputPassWord) {
 
@@ -45,13 +41,11 @@ public class Dao {
 		//-------------------------------------------
 
 		//JDBCの接続に使用するオブジェクトを宣言
-		//※finallyブロックでも扱うためtryブロック内で宣言してはいけないことに注意
 		Connection        con = null ;   // Connection（DB接続情報）格納用変数
 		PreparedStatement ps  = null ;   // PreparedStatement（SQL発行用オブジェクト）格納用変数
 		ResultSet         rs  = null ;   // ResultSet（SQL抽出結果）格納用変数
 
 		//抽出データ（UserInfoDto型）格納用変数
-		//※最終的にreturnするため、tryブロック内で宣言してはいけないことに注意
 		UserInfoDto dto = new UserInfoDto();
 
 		try {
@@ -296,11 +290,11 @@ public class Dao {
 			ps = con.prepareStatement(buf.toString());
 
 			//パラメータをセット
-			ps.setString(       1, dto.getMessageId() ); //第4パラメータ：更新データ（満足度）
-			ps.setString(    2, dto.getUserName()              ); //第1パラメータ：更新データ（名前）
-			ps.setString(       3, dto.getMessage()               ); //第2パラメータ：更新データ（年齢）
-			ps.setTimestamp(       4, dto.getTime()               ); //第3パラメータ：更新データ（性別）
-			ps.setBytes(       5, dto.getByte() ); //第4パラメータ：更新データ（満足度））
+			ps.setString(       1, dto.getMessageId() ); 
+			ps.setString(    2, dto.getUserName()              ); 
+			ps.setString(       3, dto.getMessage()               ); 
+			ps.setTimestamp(       4, dto.getTime()               ); 
+			ps.setBytes(       5, dto.getByte() );
 
 
 			//SQL文の実行
